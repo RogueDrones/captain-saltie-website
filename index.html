@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- File: captain-saltie-draft3/index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Captain Saltie - Premium New Zealand chili condiments for adventurers. Born in Aotearoa, crafted for the ultimate flavor experience. SEND IT!">
+    <title>Captain Saltie | Premium NZ Adventure Flavors - SEND IT!</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-content">
+            <a href="#home" class="nav-logo">
+                <img src="images/logo-captainsaltie-70by70.png" alt="Captain Saltie Anchor">
+                <span class="brand-text">CAPTAIN SALTIE</span>
+            </a>
+            <div class="nav-links">
+                <a href="#products" class="nav-link">Fire 'N The Hold</a>
+                <a href="#story" class="nav-link">Our Story</a>
+                <a href="#lifestyle" class="nav-link">Adventure</a>
+                <a href="#contact" class="nav-link">Ahoy!</a>
+            </div>
+            <div class="nav-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">6TH GENERATION ADVENTURE</div>
+                    <h1 class="hero-title">
+                        <span class="title-line">BORN IN THE</span>
+                        <span class="title-line accent">ANTIPODES</span>
+                        <span class="title-line">OF AOTEAROA</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Premium chili kai-enhancers crafted by a seafaring family. 
+                        <strong>PRE Surf, Sea, Mountain or Suit.</strong>
+                    </p>
+                    <div class="hero-actions">
+                        <button class="cta-primary" onclick="scrollToProducts()">
+                            SEND IT! ⚓
+                        </button>
+                        <button class="cta-secondary" onclick="scrollToStory()">
+                            Our Journey
+                        </button>
+                    </div>
+                    <p class="hero-tagline">
+                        <em>"Shake it, Stir it, Drizzle on Everything, Smash it"</em>
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/beach-blondesaltiehoodie.jpg" alt="Captain Saltie coastal adventure lifestyle" class="hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider"></div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">FIRE 'N THE HOLD</h2>
+                <p class="section-subtitle">Our signature series - forged through 20 years in the Pacific</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Premium Product -->
+                <div class="product-card featured fade-in">
+                    <div class="product-image">
+                        <img src="images/foodie-chillifillydillybread.jpg" alt="Chunky Chilli Dilli Filly on artisan bread" class="product-img">
+                        <div class="product-badge">PREMIUM</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">CHUNKY CHILLI DILLI FILLY</h3>
+                        <div class="product-testimonial">
+                            <p class="testimonial-text">
+                                "I drizzle this dizzle on practically everything, it has changed my life and I'm a better person for it"
+                            </p>
+                            <cite class="testimonial-author">— Annabel Langbein</cite>
+                        </div>
+                        <p class="product-description">
+                            The premium variant that transforms every meal into an adventure. 
+                            Chunks of flavor that deliver the ultimate taste experience for discerning adventurers.
+                        </p>
+                        <button class="product-cta">Discover More</button>
+                    </div>
+                </div>
+
+                <!-- All-Purpose Product -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/foodie-umamichilli.jpg" alt="Seafarers Umami Chilli on gourmet eggs" class="product-img">
+                        <div class="product-badge">VERSATILE</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">SEAFARERS UMAMI CHILLI</h3>
+                        <div class="product-highlight">
+                            <p class="highlight-text">
+                                <strong>The Ultimate Kai-Enhancer</strong><br>
+                                Perfect for every adventure and lifestyle
+                            </p>
+                        </div>
+                        <p class="product-description">
+                            The all-purpose flavor enhancer for every adventure. Whether you're catching waves at dawn 
+                            or closing deals in the boardroom - this kai-enhancer brings the Pacific to your plate.
+                        </p>
+                        <button class="product-cta">Get Yours</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider-reverse"></div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">6TH GENERATION</h2>
+                <p class="section-subtitle">Born from necessity, perfected through adventure</p>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-text fade-in">
+                    <div class="story-paragraphs">
+                        <p class="story-para">
+                            <strong>Captain Saltie</strong> was born from 20 years in the Pacific - sailing, 
+                            surfing reef breaks, free diving, and long solo voyages where food was often 
+                            plain and repetitive.
+                        </p>
+                        
+                        <p class="story-para">
+                            What started as a solution to transform bland ship provisions has become 
+                            <em>the South Pacific's finest food enhancer</em> - crafted by a seafaring 
+                            family of surfers, fishermen, and mountaineers.
+                        </p>
+                        
+                        <div class="story-promise">
+                            <p class="promise-text">
+                                <strong>Fire 'N The Hold</strong> will hold your anchor fast, 
+                                deliver you to safe harbor, delight your taste buds, 
+                                and guarantee you <span class="accent">SEND IT.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-image fade-in">
+                    <img src="images/beach-blondesaltiehoodie-closeup.jpg" alt="Captain Saltie adventure story" class="story-img">
+                    <div class="story-overlay">
+                        <p class="overlay-text">Ahoy! 20 years of Pacific adventures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider"></div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section id="lifestyle" class="lifestyle">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">ADVENTURE APPROVED</h2>
+                <p class="section-subtitle">
+                    PRE Surf, Sea, Mountain or Suit - Captain Saltie enhances every moment
+                </p>
+            </div>
+            
+            <div class="lifestyle-grid">
+                <div class="lifestyle-item fade-in">
+                    <img src="images/foodie-stackedjars.jpg" alt="Pre-surf breakfast adventure" class="lifestyle-img">
+                    <div class="lifestyle-overlay">
+                        <h3 class="lifestyle-title">PRE-SURF</h3>
+                        <p class="lifestyle-desc">Fuel your dawn patrol with flavor that matches your stoke</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-item fade-in">
+                    <img src="images/foodie-multiplejars.jpg" alt="Coastal sea adventure" class="lifestyle-img">
+                    <div class="lifestyle-overlay">
+                        <h3 class="lifestyle-title">SEA</h3>
+                        <p class="lifestyle-desc">Transform your galley grub into gourmet greatness</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-item fade-in">
+                    <img src="images/foodie-chillifillydillybread.jpg" alt="Mountain adventure meal" class="lifestyle-img">
+                    <div class="lifestyle-overlay">
+                        <h3 class="lifestyle-title">MOUNTAIN</h3>
+                        <p class="lifestyle-desc">Elevate your summit feast to match the view</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-item fade-in">
+                    <img src="images/foodie-umamichilli.jpg" alt="Professional business meal" class="lifestyle-img">
+                    <div class="lifestyle-overlay">
+                        <h3 class="lifestyle-title">SUIT</h3>
+                        <p class="lifestyle-desc">Bring adventure to your professional palate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider-reverse"></div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="ingredients">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">CRAFTED WITH MAGIC</h2>
+                <p class="section-subtitle">
+                    Premium ingredients sourced from around the Pacific and beyond
+                </p>
+            </div>
+            
+            <div class="ingredients-showcase fade-in">
+                <div class="ingredient-highlight">
+                    <h3>The <span class="strikethrough-secret">Secret</span> Blend</h3>
+                    <p>
+                        Canola Oil • Chilli Flake • Peanuts • Shallots • Star Anise • Cinnamon Quills • 
+                        Cardamom Black & Green • Bay Leaves • Sichuan Peppercorns • Brown Sugar • 
+                        Pure Canadian Molasses • MSG • Salt • <span class="magic">Magic</span>
+                    </p>
+                </div>
+                <div class="ingredient-note">
+                    <strong>Captain's Tip:</strong> Keep moist. Top up with pure vegetable oil & shake.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content fade-in">
+                <h2 class="section-title">AHOY THERE!</h2>
+                <p class="contact-subtitle">Ready to transform your taste buds?</p>
+                
+                <div class="contact-actions">
+                    <button class="cta-primary large">
+                        GET YOUR FIRE 'N THE HOLD
+                    </button>
+                    <p class="contact-note">Coming soon - Direct from our Aotearoa kitchen to your adventure</p>
+                </div>
+                
+                <div class="contact-info">
+                    <p class="contact-line">
+                        <strong>Stay connected:</strong> Follow our Pacific adventures and product drops
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Email</a>
+                    </div>
+                </div>
+                
+                <div class="partnership-note">
+                    <p>Resort Rongotai / A 'HUB' Initiative</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-captainsaltie-70by70.png" alt="Captain Saltie Anchor" class="footer-logo">
+                    <div class="footer-text">
+                        <span class="brand-text">CAPTAIN SALTIE</span>
+                        <p class="footer-tagline">6th Generation • Aotearoa Born • Adventure Tested</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#story" class="footer-link">Our Story</a>
+                    <a href="#products" class="footer-link">Products</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Captain Saltie. Made in Aotearoa with love and a little bit of magic.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
